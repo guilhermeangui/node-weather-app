@@ -14,7 +14,7 @@ const forecast = ({
 			callback({ error: 'Unable to find location! Try another place' })
 		} else {
 			const data = response.body.current
-			
+
 			const temperature = data.temperature
 			const feelslike = data.feelslike
 			const weather_description = data.weather_descriptions[0]
@@ -22,7 +22,7 @@ const forecast = ({
 			callback({
 				data: {
 					weather_description, 
-					summary: `It is currently ${temperature}ºC degrees out. And it feels like ${feelslike}ºC in Santos - SP.`
+					summary: `It is currently ${temperature}ºC degrees out. And it feels like ${feelslike}ºC.`
 				}
 			})
 		}
