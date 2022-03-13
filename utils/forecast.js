@@ -22,7 +22,7 @@ const forecast = ({
 			callback({
 				data: {
 					weather_description, 
-					summary: `It is currently ${temperature}ºC degrees out. And it feels like ${feelslike}ºC.`
+					summary: `It is currently ${temperature}ºC degrees out. And it feels like ${feelslike}ºC!`
 				}
 			})
 		}
